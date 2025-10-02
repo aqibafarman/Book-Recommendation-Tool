@@ -61,4 +61,3 @@ Matplotlib/Seaborn (for visualization)
 Git & GitHub (for version control)
 
 
-python app/app.py
