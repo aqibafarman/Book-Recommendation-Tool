@@ -1,27 +1,64 @@
-# 🎬 Movie Recommendation System
+Book Recommendation System
 
-## 📌 Project Overview
-This is a **content-based recommendation system** that suggests movies similar to a given movie using **cosine similarity** and **movie metadata**.
+A personalized Book Recommendation System built using collaborative filtering.
+The project predicts and suggests books that a user might enjoy based on their past ratings and preferences.
 
-## 🎯 Goals
-- Build a personalized recommendation system.
-- Extract meaningful insights from movie metadata.
-- Provide movie suggestions in real-time.
+📌 Project Goals
 
-## 🛠 Business Need
-With the growing volume of movies, it’s challenging for users to discover content they might like. This system solves that problem by recommending similar titles based on a movie the user already enjoys.
+Develop a recommendation system that improves user engagement.
 
-## 📊 How It Works
-1. Load movie dataset.
-2. Extract features (genre, keywords, cast, crew).
-3. Transform text into numerical vectors using **TF-IDF**.
-4. Calculate **cosine similarity** between movies.
-5. Recommend the top N similar movies.
+Provide personalized suggestions to reduce choice overload.
 
-## 🚀 Installation
-```bash
-git clone https://github.com/your-username/Movie-Recommendation-System.git
-cd Movie-Recommendation-System
-pip install -r requirements.txt
+Help platforms increase user retention and discoverability of content.
+
+💼 Business Need
+
+Book platforms, online bookstores, or libraries often face the challenge of keeping users engaged while helping them discover new books.
+A good recommendation system:
+
+Boosts sales and rentals by showing relevant items.
+
+Improves user satisfaction with tailored suggestions.
+
+Enhances content discoverability for niche titles.
+
+🔍 Approach & Insights
+
+Exploratory Data Analysis (EDA)
+
+Discovered rating patterns (popular books, active users).
+
+Identified data sparsity and handled missing ratings.
+
+Data Preprocessing
+
+Removed outliers and inactive users.
+
+Standardized formats for book titles and authors.
+
+Model Development
+
+Implemented collaborative filtering using KNN (item-based) and matrix factorization (SVD).
+
+Evaluated models with RMSE and recommendation accuracy.
+
+Meaningful Insights
+
+Found clusters of readers with similar taste profiles.
+
+Popular titles like Harry Potter had high cross-user recommendation scores.
+
+Niche genres benefited most from personalization.
+
+⚙️ Tech Stack
+
+Python (Pandas, NumPy, Scikit-learn, Surprise)
+
+Flask (for web app)
+
+Matplotlib/Seaborn (for visualization)
+
+Git & GitHub (for version control)
 
 
+python app/app.py
